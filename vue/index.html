@@ -1,0 +1,43 @@
+<!--
+ * @Author: your name
+ * @Date: 2022-01-17 15:01:33
+ * @LastEditTime: 2022-01-17 15:57:21
+ * @LastEditors: Please set LastEditors
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: \hubulidere:\素材\vue案例：图片轮播图\vue\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片轮播图</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="big-box">
+            <div class="img-box">
+                <div class="show-box" :style="{'transform':'translateX('+translate+'px)','transition':tsion?'all 0.5s':'none'}">
+                    <img src="./images/8.jpg" alt="">
+                    <img v-for='(item,index) in src' :src="item" alt="">
+                    <img src="./images/1.jpg" alt="">
+                </div>
+            </div>
+            <div class="arrowhead-box">
+                <span @click='last'></span>
+                <span @click='next'></span>
+            </div>
+            <div class="swiper-box" ref="swiper">
+                <span v-for='(item,index) in src' @click='swiper(index)'></span>
+            </div>
+        </div>
+    </div>
+    <script src="./js/vue.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
