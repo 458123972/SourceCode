@@ -1,0 +1,48 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-12-22 16:06:21
+ * @LastEditTime: 2021-12-22 16:30:31
+ * @LastEditors: Please set LastEditors
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: \hubulidere:\素材\【HTML+CSS+VUE】商品轮播图\vue\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品轮播图</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="big-box">
+            <div class="card">
+                <h3>{{introduce.title}}</h3>
+                <i><img src="./images/xing.png" alt=""></i>
+                <p>{{introduce.text}}</p>
+                <div class="buy">
+                    <i></i>
+                    <button @click='money'>$89.00</button>
+                </div>
+            </div>
+            <div class="swiper-box">
+                <div class="img-box" :class="{selectimg:sure}">
+                    <img v-for='(item,index) in src' :src="item" alt="">
+                </div>
+                <div class="select-box">
+                    <span @click='select(0)'></span>
+                    <span @click='select(1)'></span>
+                    <span @click='select(2)'></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/vue.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!--
+ * @Author: your name
+ * @Date: 2022-01-11 17:03:21
+ * @LastEditTime: 2022-01-11 17:14:11
+ * @LastEditors: Please set LastEditors
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: \hubulidere:\素材\HTML案例：伸缩侧边栏\vue\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伸缩侧边栏</title>
+    <link rel="stylesheet" href="./font/iconfont.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div id="app">
+        <ul class="big-box" ref="expand">
+            <li v-for='(item,index) in font' @click='expand'>
+                <div class="iconfont" :class='[item.css,{expanddiv:expandwidth}]'></div>
+                <p>{{item.text}}</p>
+            </li>
+        </ul>
+    </div>
+    <script src="./js/vue.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

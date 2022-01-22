@@ -1,0 +1,59 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-12-16 20:32:44
+ * @LastEditTime: 2021-12-17 01:06:47
+ * @LastEditors: Please set LastEditors
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: \hubulidere:\素材\【HTML+CSS+VUE】：简易的便签\vue\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简易的便签</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="memo-box">
+            <div class="input-box">
+                <i></i>
+                <input type="text" @keyup.enter='getinput' v-model='inputvalue' placeholder="请输入要查找的内容">
+                <hr>
+            </div>
+            <div class="memo">
+                <ul>
+                    <li v-for='(item,index) in memonext' :style='{backgroundColor:background[index]}'>
+                        <div @click='revise(index)'>
+                            <h3>{{item.title}}</h3>
+                            <hr>
+                            <p>{{item.text}}</p>
+                            <hr>
+                            <span>日期:{{item.presenttime}}</span>
+                        </div>
+                        <div class="delete-box" @click='out(index)'><i></i></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="add-button" @click='addnotes'></div>
+            <div class="add-box" :style="{visibility:modify?'visible':'hidden'}">
+                <div class="add-content">
+                    <input type="text" ref="getValue" placeholder="请输入标题"><br>
+                    <textarea ref="gettextarea" style="height: 55%;width: 80%;"></textarea><br>
+                    <div class="button-box">
+                        <button @click='control'>确定</button>
+                        <button @click='cancel'>取消</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/vue.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

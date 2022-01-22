@@ -1,0 +1,57 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-12-15 15:36:34
+ * @LastEditTime: 2021-12-15 20:21:37
+ * @LastEditors: Please set LastEditors
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: \hubulidere:\素材\【HTML+CSS+VUE】：选择城市\Vue\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择城市</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="input_box">
+            <input id="inputval" type="text" @focus='onfocus' @blue='onblur' v-model='keyWord'
+            placeholder="请输入城市名称或关键字">
+        </div>
+        <div class="search" :style="{display:isRout?'none':'block'}">
+            <ul>
+                <li v-for="(item,index) in filPersons" @mousedown='getCity'>{{item}}</li>
+            </ul>
+        </div>
+        <div class="City_box" :style="{display:!isRout?'none':'block'}">
+            <div class="hotCity">
+                <h3>热门</h3>
+                <span v-for="(item,index) in hot" @click='getCity'>
+                    {{item}}
+                </span>
+            </div>
+            <div class="all">
+                <ul v-for="(item,index) in City" :id='CityId(index)'>
+                    <p class="letter">{{item.capital}}</p>
+                    <li v-for="(text,index) in item.name" @click='getCity'>
+                        <p>{{text}}</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="initial">
+                <ul v-for="(item,index) in Capital" @click='selectMenu(item)'>
+                    <li><i>{{item}}</i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./js/vue.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

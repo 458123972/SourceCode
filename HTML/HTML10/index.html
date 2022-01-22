@@ -1,0 +1,1054 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-12-10 22:26:19
+ * @LastEditTime: 2021-12-15 15:35:59
+ * @LastEditors: Please set LastEditors
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: \hubulidere:\素材\HTML案例（十一）\HTML\index.html
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0
+    ,minimum-scale=1.0">
+    <title>筛选功能</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="big-box">
+        <div class="select-box">
+            <select id="money">
+                <option value="none" selected disabled hidden>价格</option>
+                <option value="gao">价格从高到低</option>
+                <option value="di">价格从低到高</option>
+            </select>
+            <select id="sales">
+                <option value="none" selected disabled hidden>销量</option>
+                <option value="gao">销量从高到低</option>
+                <option value="di">销量从高到低</option>
+            </select>
+            <select id="brand">
+                <option value="none" selected disabled hidden>品牌</option>
+                <option value="all">全部</option>
+                <option value="xiaomi">小米</option>
+                <option value="huawei">华为</option>
+                <option value="yijia">一加</option>
+                <option value="pingguo">苹果</option>
+                <option value="vivo">vivo</option>
+                <option value="oppo">oppo</option>
+            </select>
+        </div>
+        <div class="ul-box">
+            <ul>
+                <li>
+                    <!-- 图片 -->
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./image/huawei1.jpg" alt="1">
+                        </a>
+                    </div>
+                    <!-- 名称 -->
+                    <div class="commodity-name">
+                        <a href="#">
+                            <span>华为 nava9 Pro</span>
+                        </a>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="commodity-box">
+                        <span>华为</span>
+                        <span>包邮</span>
+                        <span>七天无理由退货</span>
+                    </div>
+                    <!-- 销量、价格 -->
+                    <div class="money-box">
+                        <span>已售:5000+</span>
+                        <strong>
+                            <em>￥</em>
+                            <i>2199.00</i>
+                        </strong>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片 -->
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./image/iphone1.jpg" alt="1">
+                        </a>
+                    </div>
+                    <!-- 名称 -->
+                    <div class="commodity-name">
+                        <a href="#">
+                            <span>iPhone 13 mini</span>
+                        </a>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="commodity-box">
+                        <span>Apple</span>
+                        <span>包邮</span>
+                        <span>限时优惠</span>
+                    </div>
+                    <!-- 销量、价格 -->
+                    <div class="money-box">
+                        <span>已售:3000+</span>
+                        <strong>
+                            <em>￥</em>
+                            <i>3200.00</i>
+                        </strong>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片 -->
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./image/oppo6.jpg" alt="1">
+                        </a>
+                    </div>
+                    <!-- 名称 -->
+                    <div class="commodity-name">
+                        <a href="#">
+                            <span>oppo K7x</span>
+                        </a>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="commodity-box">
+                        <span>oppo</span>
+                        <span>新品</span>
+                        <!-- <span>七天无理由退货</span> -->
+                    </div>
+                    <!-- 销量、价格 -->
+                    <div class="money-box">
+                        <span>已售:8000+</span>
+                        <strong>
+                            <em>￥</em>
+                            <i>1199.00</i>
+                        </strong>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片 -->
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./image/vivo6.jpg" alt="1">
+                        </a>
+                    </div>
+                    <!-- 名称 -->
+                    <div class="commodity-name">
+                        <a href="#">
+                            <span>vivo TWS 2</span>
+                        </a>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="commodity-box">
+                        <span>vivo</span>
+                        <span>满800减50</span>
+                        <span>赠</span>
+                    </div>
+                    <!-- 销量、价格 -->
+                    <div class="money-box">
+                        <span>已售:4000+</span>
+                        <strong>
+                            <em>￥</em>
+                            <i>1799.00</i>
+                        </strong>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片 -->
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./image/xiaomi4.jpg" alt="1">
+                        </a>
+                    </div>
+                    <!-- 名称 -->
+                    <div class="commodity-name">
+                        <a href="#">
+                            <span>小米11</span>
+                        </a>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="commodity-box">
+                        <span>小米</span>
+                        <span>新品</span>
+                        <span>京东物流</span>
+                    </div>
+                    <!-- 销量、价格 -->
+                    <div class="money-box">
+                        <span>已售:5000+</span>
+                        <strong>
+                            <em>￥</em>
+                            <i>1899.00</i>
+                        </strong>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片 -->
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./image/oppo4.jpg">
+                        </a>
+                    </div>
+                    <!-- 名称 -->
+                    <div class="commodity-name">
+                        <a href="#">
+                            <span>oppo Reno7</span>
+                        </a>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="commodity-box">
+                        <span>oppo</span>
+                        <span>新品</span>
+                        <span>赠</span>
+                    </div>
+                    <!-- 销量、价格 -->
+                    <div class="money-box">
+                        <span>已售:8000+</span>
+                        <strong>
+                            <em>￥</em>
+                            <i>2649.00</i>
+                        </strong>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片 -->
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./image/yijia4.jpg" alt="1">
+                        </a>
+                    </div>
+                    <!-- 名称 -->
+                    <div class="commodity-name">
+                        <a href="#">
+                            <span>一加 9 Pro</span>
+                        </a>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="commodity-box">
+                        <span>一加</span>
+                        <span>新品</span>
+                        <span>秒杀</span>
+                    </div>
+                    <!-- 销量、价格 -->
+                    <div class="money-box">
+                        <span>已售:5000+</span>
+                        <strong>
+                            <em>￥</em>
+                            <i>3199.00</i>
+                        </strong>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片 -->
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./image/vivo3.jpg" alt="1">
+                        </a>
+                    </div>
+                    <!-- 名称 -->
+                    <div class="commodity-name">
+                        <a href="#">
+                            <span>iQOO极速散热背夹</span>
+                        </a>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="commodity-box">
+                        <span>vivo</span>
+                        <span>包邮</span>
+                        <span>赠</span>
+                    </div>
+                    <!-- 销量、价格 -->
+                    <div class="money-box">
+                        <span>已售:6000+</span>
+                        <strong>
+                            <em>￥</em>
+                            <i>1299.00</i>
+                        </strong>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片 -->
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./image/oppo3.jpg" alt="1">
+                        </a>
+                    </div>
+                    <!-- 名称 -->
+                    <div class="commodity-name">
+                        <a href="#">
+                            <span>iQOO8</span>
+                        </a>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="commodity-box">
+                        <span>vivo</span>
+                        <span>赠</span>
+                        <span>七天无理由退货</span>
+                    </div>
+                    <!-- 销量、价格 -->
+                    <div class="money-box">
+                        <span>已售:7000+</span>
+                        <strong>
+                            <em>￥</em>
+                            <i>3299.00</i>
+                        </strong>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片 -->
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./image/huawei3.jpg" alt="1">
+                        </a>
+                    </div>
+                    <!-- 名称 -->
+                    <div class="commodity-name">
+                        <a href="#">
+                            <span>华为 MateBookX Pro</span>
+                        </a>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="commodity-box">
+                        <span>华为</span>
+                        <span>包邮</span>
+                        <span>满1000减100</span>
+                    </div>
+                    <!-- 销量、价格 -->
+                    <div class="money-box">
+                        <span>已售:2000+</span>
+                        <strong>
+                            <em>￥</em>
+                            <i>1799.00</i>
+                        </strong>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片 -->
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./image/iphone4.jpg" alt="1">
+                        </a>
+                    </div>
+                    <!-- 名称 -->
+                    <div class="commodity-name">
+                        <a href="#">
+                            <span>iPhone 13</span>
+                        </a>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="commodity-box">
+                        <span>Apple</span>
+                        <span>赠</span>
+                        <span>满600减50</span>
+                    </div>
+                    <!-- 销量、价格 -->
+                    <div class="money-box">
+                        <span>已售:7000+</span>
+                        <strong>
+                            <em>￥</em>
+                            <i>2799.00</i>
+                        </strong>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片 -->
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./image/yijia1.jpg" alt="1">
+                        </a>
+                    </div>
+                    <!-- 名称 -->
+                    <div class="commodity-name">
+                        <a href="#">
+                            <span>一加 Buds 72</span>
+                        </a>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="commodity-box">
+                        <span>一加</span>
+                        <span>七天无理由退货</span>
+                    </div>
+                    <!-- 销量、价格 -->
+                    <div class="money-box">
+                        <span>已售:8000+</span>
+                        <strong>
+                            <em>￥</em>
+                            <i>2199.00</i>
+                        </strong>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片 -->
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./image/vivo5.jpg" alt="1">
+                        </a>
+                    </div>
+                    <!-- 名称 -->
+                    <div class="commodity-name">
+                        <a href="#">
+                            <span>vivo S10 Pro</span>
+                        </a>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="commodity-box">
+                        <span>vivo</span>
+                        <span>赠</span>
+                        <span>满1000减80</span>
+                    </div>
+                    <!-- 销量、价格 -->
+                    <div class="money-box">
+                        <span>已售:6500+</span>
+                        <strong>
+                            <em>￥</em>
+                            <i>2999.00</i>
+                        </strong>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片 -->
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./image/yijia2.jpg" alt="1">
+                        </a>
+                    </div>
+                    <!-- 名称 -->
+                    <div class="commodity-name">
+                        <a href="#">
+                            <span>一加 Warp 充电器</span>
+                        </a>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="commodity-box">
+                        <span>一加</span>
+                        <span>包邮</span>
+                        <span>新品</span>
+                    </div>
+                    <!-- 销量、价格 -->
+                    <div class="money-box">
+                        <span>已售:2000+</span>
+                        <strong>
+                            <em>￥</em>
+                            <i>88.00</i>
+                        </strong>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片 -->
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./image/oppo2.jpg" alt="1">
+                        </a>
+                    </div>
+                    <!-- 名称 -->
+                    <div class="commodity-name">
+                        <a href="#">
+                            <span>iQOO U3x</span>
+                        </a>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="commodity-box">
+                        <span>vivo</span>
+                        <span>包邮</span>
+                        <span>新品</span>
+                    </div>
+                    <!-- 销量、价格 -->
+                    <div class="money-box">
+                        <span>已售:5000+</span>
+                        <strong>
+                            <em>￥</em>
+                            <i>1299.00</i>
+                        </strong>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片 -->
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./image/huawei5.jpg" alt="1">
+                        </a>
+                    </div>
+                    <!-- 名称 -->
+                    <div class="commodity-name">
+                        <a href="#">
+                            <span>华为液晶电视</span>
+                        </a>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="commodity-box">
+                        <span>华为</span>
+                        <span>新品</span>
+                        <span>满1500减300</span>
+                    </div>
+                    <!-- 销量、价格 -->
+                    <div class="money-box">
+                        <span>已售:3000+</span>
+                        <strong>
+                            <em>￥</em>
+                            <i>2999.00</i>
+                        </strong>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片 -->
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./image/iphone3.jpg" alt="1">
+                        </a>
+                    </div>
+                    <!-- 名称 -->
+                    <div class="commodity-name">
+                        <a href="#">
+                            <span>Apple 13</span>
+                        </a>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="commodity-box">
+                        <span>Apple</span>
+                        <span>包邮</span>
+                    </div>
+                    <!-- 销量、价格 -->
+                    <div class="money-box">
+                        <span>已售:2000+</span>
+                        <strong>
+                            <em>￥</em>
+                            <i>1488.00</i>
+                        </strong>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片 -->
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./image/iphone6.jpg" alt="1">
+                        </a>
+                    </div>
+                    <!-- 名称 -->
+                    <div class="commodity-name">
+                        <a href="#">
+                            <span>iPhone XR</span>
+                        </a>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="commodity-box">
+                        <span>Apple</span>
+                        <span>包邮</span>
+                        <span>京东物流</span>
+                    </div>
+                    <!-- 销量、价格 -->
+                    <div class="money-box">
+                        <span>已售:1000+</span>
+                        <strong>
+                            <em>￥</em>
+                            <i>2199.00</i>
+                        </strong>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片 -->
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./image/xiaomi1.jpg" alt="1">
+                        </a>
+                    </div>
+                    <!-- 名称 -->
+                    <div class="commodity-name">
+                        <a href="#">
+                            <span>Redmi 9A</span>
+                        </a>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="commodity-box">
+                        <span>小米</span>
+                        <span>满300减30</span>
+                        <span>七天无理由退货</span>
+                    </div>
+                    <!-- 销量、价格 -->
+                    <div class="money-box">
+                        <span>已售:9000+</span>
+                        <strong>
+                            <em>￥</em>
+                            <i>1500.00</i>
+                        </strong>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片 -->
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./image/huawei4.jpg" alt="1">
+                        </a>
+                    </div>
+                    <!-- 名称 -->
+                    <div class="commodity-name">
+                        <a href="#">
+                            <span>华为手表</span>
+                        </a>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="commodity-box">
+                        <span>华为</span>
+                        <span>新品</span>
+                        <span>七天无理由退货</span>
+                    </div>
+                    <!-- 销量、价格 -->
+                    <div class="money-box">
+                        <span>已售:2500+</span>
+                        <strong>
+                            <em>￥</em>
+                            <i>699.00</i>
+                        </strong>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片 -->
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./image/iphone2.jpg" alt="1">
+                        </a>
+                    </div>
+                    <!-- 名称 -->
+                    <div class="commodity-name">
+                        <a href="#">
+                            <span>iPhone 13</span>
+                        </a>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="commodity-box">
+                        <span>Apple</span>
+                        <span>赠</span>
+                    </div>
+                    <!-- 销量、价格 -->
+                    <div class="money-box">
+                        <span>已售:4000+</span>
+                        <strong>
+                            <em>￥</em>
+                            <i>1799.00</i>
+                        </strong>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片 -->
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./image/huawei2.jpg" alt="1">
+                        </a>
+                    </div>
+                    <!-- 名称 -->
+                    <div class="commodity-name">
+                        <a href="#">
+                            <span>华为 FreeBuds 4 无线耳机</span>
+                        </a>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="commodity-box">
+                        <span>华为</span>
+                        <span>新品</span>
+                        <span>满770减80</span>
+                    </div>
+                    <!-- 销量、价格 -->
+                    <div class="money-box">
+                        <span>已售:4500+</span>
+                        <strong>
+                            <em>￥</em>
+                            <i>458.00</i>
+                        </strong>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片 -->
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./image/yijia5.jpg" alt="1">
+                        </a>
+                    </div>
+                    <!-- 名称 -->
+                    <div class="commodity-name">
+                        <a href="#">
+                            <span>一加 Warp 双充数据线</span>
+                        </a>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="commodity-box">
+                        <span>一加</span>
+                        <span>包邮</span>
+                    </div>
+                    <!-- 销量、价格 -->
+                    <div class="money-box">
+                        <span>已售:7600+</span>
+                        <strong>
+                            <em>￥</em>
+                            <i>65.00</i>
+                        </strong>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片 -->
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./image/huawei6.jpg" alt="1">
+                        </a>
+                    </div>
+                    <!-- 名称 -->
+                    <div class="commodity-name">
+                        <a href="#">
+                            <span>华为 nova9</span>
+                        </a>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="commodity-box">
+                        <span>华为</span>
+                        <span>新品</span>
+                        <span>包邮</span>
+                    </div>
+                    <!-- 销量、价格 -->
+                    <div class="money-box">
+                        <span>已售:2000+</span>
+                        <strong>
+                            <em>￥</em>
+                            <i>1299.00</i>
+                        </strong>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片 -->
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./image/vivo2.jpg" alt="1">
+                        </a>
+                    </div>
+                    <!-- 名称 -->
+                    <div class="commodity-name">
+                        <a href="#">
+                            <span>vivo Y70t</span>
+                        </a>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="commodity-box">
+                        <span>vivo</span>
+                        <span>包邮</span>
+                    </div>
+                    <!-- 销量、价格 -->
+                    <div class="money-box">
+                        <span>已售:6700+</span>
+                        <strong>
+                            <em>￥</em>
+                            <i>2866.00</i>
+                        </strong>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片 -->
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./image/xiaomi5.jpg" alt="1">
+                        </a>
+                    </div>
+                    <!-- 名称 -->
+                    <div class="commodity-name">
+                        <a href="#">
+                            <span>小米智能摄像头</span>
+                        </a>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="commodity-box">
+                        <span>小米</span>
+                        <span>满200减50</span>
+                        <span>七天无理由退货</span>
+                    </div>
+                    <!-- 销量、价格 -->
+                    <div class="money-box">
+                        <span>已售:1000+</span>
+                        <strong>
+                            <em>￥</em>
+                            <i>899.00</i>
+                        </strong>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片 -->
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./image/vivo4.jpg" alt="1">
+                        </a>
+                    </div>
+                    <!-- 名称 -->
+                    <div class="commodity-name">
+                        <a href="#">
+                            <span>vivo T1</span>
+                        </a>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="commodity-box">
+                        <span>vivo</span>
+                        <span>新品</span>
+                        <span>赠</span>
+                    </div>
+                    <!-- 销量、价格 -->
+                    <div class="money-box">
+                        <span>已售:5200+</span>
+                        <strong>
+                            <em>￥</em>
+                            <i>1799.00</i>
+                        </strong>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片 -->
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./image/xiaomi2.jpg" alt="1">
+                        </a>
+                    </div>
+                    <!-- 名称 -->
+                    <div class="commodity-name">
+                        <a href="#">
+                            <span>小米摄像头</span>
+                        </a>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="commodity-box">
+                        <span>小米</span>
+                        <span>七天无理由退货</span>
+                    </div>
+                    <!-- 销量、价格 -->
+                    <div class="money-box">
+                        <span>已售:1200+</span>
+                        <strong>
+                            <em>￥</em>
+                            <i>766.00</i>
+                        </strong>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片 -->
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./image/xiaomi3.jpg" alt="1">
+                        </a>
+                    </div>
+                    <!-- 名称 -->
+                    <div class="commodity-name">
+                        <a href="#">
+                            <span>小米电动牙刷</span>
+                        </a>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="commodity-box">
+                        <span>小米</span>
+                        <span>新品</span>
+                        <span>赠</span>
+                    </div>
+                    <!-- 销量、价格 -->
+                    <div class="money-box">
+                        <span>已售:3500+</span>
+                        <strong>
+                            <em>￥</em>
+                            <i>339.00</i>
+                        </strong>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片 -->
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./image/vivo1.jpg" alt="1">
+                        </a>
+                    </div>
+                    <!-- 名称 -->
+                    <div class="commodity-name">
+                        <a href="#">
+                            <span>vivo X70 Pro</span>
+                        </a>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="commodity-box">
+                        <span>vivo</span>
+                        <span>包邮</span>
+                    </div>
+                    <!-- 销量、价格 -->
+                    <div class="money-box">
+                        <span>已售:7000+</span>
+                        <strong>
+                            <em>￥</em>
+                            <i>3999.00</i>
+                        </strong>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片 -->
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./image/yijia6.jpg" alt="1">
+                        </a>
+                    </div>
+                    <!-- 名称 -->
+                    <div class="commodity-name">
+                        <a href="#">
+                            <span>一加 OnePlus 9RT</span>
+                        </a>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="commodity-box">
+                        <span>一加</span>
+                        <span>新品</span>
+                    </div>
+                    <!-- 销量、价格 -->
+                    <div class="money-box">
+                        <span>已售:5400+</span>
+                        <strong>
+                            <em>￥</em>
+                            <i>3499.00</i>
+                        </strong>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片 -->
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./image/yijia3.jpg" alt="1">
+                        </a>
+                    </div>
+                    <!-- 名称 -->
+                    <div class="commodity-name">
+                        <a href="#">
+                            <span>一加智能手表</span>
+                        </a>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="commodity-box">
+                        <span>一加</span>
+                        <span>京东物流</span>
+                        <span>满600减70</span>
+                    </div>
+                    <!-- 销量、价格 -->
+                    <div class="money-box">
+                        <span>已售:7000+</span>
+                        <strong>
+                            <em>￥</em>
+                            <i>899.00</i>
+                        </strong>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片 -->
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./image/oppo1.jpg" alt="1">
+                        </a>
+                    </div>
+                    <!-- 名称 -->
+                    <div class="commodity-name">
+                        <a href="#">
+                            <span>oppo K9</span>
+                        </a>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="commodity-box">
+                        <span>oppo</span>
+                        <span>赠</span>
+                        <span>七天无理由退货</span>
+                    </div>
+                    <!-- 销量、价格 -->
+                    <div class="money-box">
+                        <span>已售:3200+</span>
+                        <strong>
+                            <em>￥</em>
+                            <i>1689.00</i>
+                        </strong>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片 -->
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./image/oppo5.jpg" alt="1">
+                        </a>
+                    </div>
+                    <!-- 名称 -->
+                    <div class="commodity-name">
+                        <a href="#">
+                            <span>oppo A93s</span>
+                        </a>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="commodity-box">
+                        <span>oppo</span>
+                        <span>新品</span>
+                        <span>包邮</span>
+                    </div>
+                    <!-- 销量、价格 -->
+                    <div class="money-box">
+                        <span>已售:3000+</span>
+                        <strong>
+                            <em>￥</em>
+                            <i>1789.00</i>
+                        </strong>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片 -->
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./image/iphone5.jpg" alt="1">
+                        </a>
+                    </div>
+                    <!-- 名称 -->
+                    <div class="commodity-name">
+                        <a href="#">
+                            <span>iPhone 11</span>
+                        </a>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="commodity-box">
+                        <span>Apple</span>
+                        <span>新品</span>
+                    </div>
+                    <!-- 销量、价格 -->
+                    <div class="money-box">
+                        <span>已售:4000+</span>
+                        <strong>
+                            <em>￥</em>
+                            <i>3900.00</i>
+                        </strong>
+                    </div>
+                </li>
+                <li>
+                    <!-- 图片 -->
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./image/xiaomi6.jpg" alt="1">
+                        </a>
+                    </div>
+                    <!-- 名称 -->
+                    <div class="commodity-name">
+                        <a href="#">
+                            <span>小米空调</span>
+                        </a>
+                    </div>
+                    <!-- 品牌 -->
+                    <div class="commodity-box">
+                        <span>小米</span>
+                        <span>满800减的100</span>
+                        <span>七天无理由退货</span>
+                    </div>
+                    <!-- 销量、价格 -->
+                    <div class="money-box">
+                        <span>已售:3000+</span>
+                        <strong>
+                            <em>￥</em>
+                            <i>2199.00</i>
+                        </strong>
+                    </div>
+                </li>
+            </ul>
+           
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

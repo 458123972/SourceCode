@@ -1,0 +1,137 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+em,i {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+.big-box {
+    width: 100%;
+    min-width: 320px;
+    max-width: 960px;
+    margin: 50px auto;
+    border: 5px solid rgba(255, 21, 21, 0.8);
+    box-shadow: 0 5px 8px rgba(1, 1, 1, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:aliceblue;
+}
+
+.big-box .select-box {
+    width: 100%;
+    height: 40px;
+    background-color:white;
+    box-shadow: 0 1px 3px rgba(1, 1, 1, 0.2);
+}
+
+.big-box .select-box select {
+    width: 32%;
+    height: 40px;
+    background-color: white;
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+    border: 0;
+    outline: none;
+}
+
+.big-box .ul-box ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.big-box .ul-box ul li {
+    display: block;
+    float: left;
+    width: 30%;
+    min-width: 280px;
+    max-width: 400px;
+    margin: 16px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 1px 2px rgba(1, 1, 1, 0.2);
+    transition: all 0.2s;
+}
+
+.big-box .ul-box ul li:hover {
+    box-shadow: 0px 3px 8px rgba(1, 1, 1, 0.2);
+}
+
+.img-box {
+    width: 100%;
+    max-width: 320px;
+}
+
+.commodity-name a span {
+    display: block;
+    width: 100%;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 8px 4px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #777;
+}
+
+.commodity-name a span:hover {
+    color: rgb(238, 68, 68);
+}
+
+.commodity-box {
+    width: 100%;
+    height: 32px;
+    margin-top: 14px;
+}
+
+.commodity-box span {
+    float: left;
+    margin-left: 4px;
+    padding: 4px;
+    font-size: 10px;
+    color: rgb(238, 23, 23);
+    border: 1px solid rgb(238, 23, 23);
+    border-radius: 5px;
+}
+
+.commodity-box span:first-child {
+    color: #fff;
+    font-weight: 600;
+    background-color: rgb(238, 23, 23);
+}
+
+.money-box {
+    width: 100%;
+    height: 32px;
+    margin-top: 14px;
+    line-height: 32px;
+}
+
+.money-box span {
+    float: left;
+    color: rgb(245, 161, 83);
+    padding: 0 4px;
+}
+
+.money-box strong {
+    float: right;
+    padding: 0 4px;
+    color: rgb(238, 23, 23);
+    font-weight: 400;
+}
+
+.money-box strong em {
+    font-size: 20px;
+}
+
+.money-box strong i {
+    font-size: 24px;
+}

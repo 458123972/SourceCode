@@ -1,0 +1,52 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+}
+
+a {
+	text-decoration: none;
+	color: #626262;
+}
+
+.nav {
+	width: 250px;
+	margin: 70px auto;
+}
+
+.nav .one {
+	height: 40px;
+	border: 3px solid rgb(38, 255, 165);
+	line-height: 40px;
+	text-align: center;
+	margin-top: 10px;
+	position: relative;
+}
+
+.nav .one img {
+	position: absolute;
+	top: 14px;
+	right: 16px;
+	width: 14px;
+	height: 14px;
+
+}
+
+.two {
+	width: 248px;
+	border-left: 1px solid rgb(38, 255, 165);
+	border-right: 1px solid rgb(38, 255, 165);
+}
+
+.two div {
+	height: 35px;
+	line-height: 35px;
+	border-bottom: 1px dotted rgb(38, 255, 165);
+	text-align: center;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.two div:hover {
+	background-color: rgba(38,255,165,.2);
+}

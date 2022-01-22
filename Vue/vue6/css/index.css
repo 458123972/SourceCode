@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(250, 254, 255);
+}
+
+i,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.big-box {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 120px auto;
+}
+
+.card {
+    float: left;
+    width: 20%;
+    min-width: 200px;
+    height: 400px;
+    background-color: rgb(245, 255, 255);
+    box-shadow: 0 0 50px rgb(228, 212, 228);
+    border-radius: 20px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.card .text {
+    width: 90%;
+    height: 200px;
+    border-radius: 20px;
+    background-color: rgb(245, 255, 255);
+    overflow: hidden;
+    text-align: center;
+}
+
+.card .text h3 {
+    width: 96%;
+    line-height: 40px;
+    color: #333;
+    font-size: 22px;
+}
+
+.card .text p {
+    width: 96%;
+    color: #777;
+    font-size: 16px;
+}
+
+.card i {
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: rgb(245, 255, 255);
+}
+
+.card:nth-child(1):hover {
+    background-color: rgb(39, 252, 255);
+    cursor: pointer;
+    transform: translateY(-12px);
+}
+
+.card:nth-child(1) i {
+    background: url('../images/praisey.png') no-repeat;
+    box-shadow: 0 3px 18px rgb(39, 252, 255);
+    background-size: 40px;
+    background-position: 20px 20px;
+}
+
+.card:nth-child(1):hover i {
+    background: url('../images/praise.png') no-repeat;
+    box-shadow: 0 3px 18px rgb(250, 254, 255);
+    background-size: 40px;
+    background-position: 20px 20px;
+}
+
+.card:nth-child(2):hover {
+    background-color: rgb(15, 73, 255);
+    cursor: pointer;
+    transform: translateY(-12px);
+}
+
+.card:nth-child(2) i {
+    background: url('../images/commenty.png') no-repeat;
+    box-shadow: 0 3px 18px rgb(15, 73, 255);
+    background-size: 40px;
+    background-position: 20px 20px;
+}
+
+.card:nth-child(2):hover i {
+    background: url('../images/comment.png') no-repeat;
+    box-shadow: 0 3px 18px rgb(250, 254, 255);
+    background-size: 40px;
+    background-position: 20px 20px;
+}
+
+.card:nth-child(3):hover {
+    background-color: rgb(214, 110, 247);
+    cursor: pointer;
+    transform: translateY(-12px);
+}
+
+.card:nth-child(3) i {
+    background: url('../images/collecty.png') no-repeat;
+    box-shadow: 0 3px 18px rgb(214, 110, 247);
+    background-size: 40px;
+    background-position: 20px 20px;
+}
+
+.card:nth-child(3):hover i {
+    background: url('../images/collect.png') no-repeat;
+    box-shadow: 0 3px 18px rgb(250, 254, 255);
+    background-size: 40px;
+    background-position: 20px 20px;
+}
+
+.card button {
+    width: 50%;
+    height: 46px;
+    border: 0;
+    border-radius: 100px;
+    color: rgb(245, 255, 255);
+    font-size: 18px;
+}
+
+.card:nth-child(1) button {
+    background-color: rgb(39, 252, 255);
+    box-shadow: 0 0 12px rgb(39, 252, 255);
+}
+
+.card:nth-child(2) button {
+    background-color: rgb(15, 73, 255);
+    box-shadow: 0 0 12px rgb(15, 73, 255);
+}
+.card:nth-child(3) button {
+    background-color: rgb(214, 110, 247);
+    box-shadow: 0 0 12px rgb(214, 110, 247);
+}
+
+.card:hover button {
+    box-shadow: 0 0 12px rgb(245, 255, 255);
+}

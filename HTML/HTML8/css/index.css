@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: #efefef;
+    margin: 100px auto;
+}
+
+.box {
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+}
+
+.container {
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.07);
+    overflow: hidden;
+}
+
+.container a {
+    display: inline-block;
+    height: 46px;
+    width: 80px;
+    margin: 0 20px;
+    color: #424242;
+    font-size: 20px;
+    border-bottom: 4px solid transparent;
+    transition:all .2s ease-in;
+}
+
+.box .container_a {
+    color: #0873ff;
+    border-bottom: 4px solid #0873ff;
+}
+
+.ul_box {
+    position: relative;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    text-align: left;
+    border-top: 1px solid #e8e8e8;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.07);
+}
+
+.ul_box ul {
+    margin: 20px;
+    list-style: none;
+}
+
+.ul_box ul li {
+    display: inline-block;
+    border: 1px solid #777;
+    padding: 4px;
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    -webkit-transition: all 0.6s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition:all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5 ease-in;
+}
+
+.ul_box ul li a {
+    border: 1px solid transparent;
+    display: block;
+    line-height: 50px;
+    -webkit-transition: all 0.6s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition:all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    overflow: hidden;
+    text-align: center;
+    color: #777;
+}
+
+.ul_box ul li:hover,.ul_box ul li:hover a {
+    border: 1px solid #0873ff;
+    color: #0873ff;
+}

@@ -1,0 +1,42 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-06-05 17:38:38
+ * @LastEditTime: 2021-06-05 23:25:45
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \HTML\logo.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录界面</title>
+    <link rel="stylesheet" href="logo.css">
+</head>
+<body>
+    <div id="bigbox">
+        <h1>LOGIN</h1>
+        <div class="inputbox">
+            <div class="inputtext">
+                <img src="../image/user.png" alt="1" >
+                <input type="text" placeholder="username" id="username" onchange="user_change()">
+                <span class="point" id="user_point"><span class="triangle"></span>账号长度不能小于8</span>
+            </div>
+            
+            <div class="inputtext">
+                <img src="../image/password.png" alt="2">
+                <input type="password" placeholder="password" id="password" onchange="password_change()">
+                <span class="point" id="password_point"><span class="triangle"></span>密码长度不能小于8</span>
+            </div>
+        </div>
+        <div class="buttonbox">
+            <button>login</button>
+            <button>register</button>
+        </div>
+    </div>
+     
+</body>
+<script src="./logo.js"></script>
+</html>

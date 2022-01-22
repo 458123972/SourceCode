@@ -1,0 +1,58 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-12-23 16:43:31
+ * @LastEditTime: 2021-12-28 18:33:26
+ * @LastEditors: Please set LastEditors
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: \hubulider\vue\vue\vue6\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电影详情页面</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div id="app">
+        <div class="big-box">
+            <div class="big-picture">
+                <img :src="show.src" alt="">
+            </div>
+            <div class="left-Introduction">
+                <div class="thumbnail">
+                    <i @click='under'></i>
+                    <div class="img-box">
+                        <i @click='towardsleft'></i>
+                        <i @click='towardsright'></i>
+                        <div class="middle">
+                            <div class="sliding" ref="picturewidth" :style='{transform:imgtrang}'>
+                                <img v-for='(item,index) in images' @click="over(index)" :src="item.src" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="title-box">
+                    <h2>{{show.movie}}</h2>
+                    <hr>
+                </div>
+                <div class="text-box">
+                    <div class="introduce-box">
+                        <strong>{{show.grade}}<i :style='{backgroundPositionY:setgrade()}'></i></strong>
+                        <span>上映时间:{{show.screen}}</span>
+                        <span>时长:{{show.duration}}</span>
+                    </div>
+                    <p>{{show.introduce}}</p>
+                    <button><i>立即观看</i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/vue.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.bigbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: white;
+}
+/* 这里是表格样式 */
+.bigbox .tablebox {
+    overflow-y: auto;
+    margin: 0 20px;
+    background-color: aliceblue;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    max-height: 500px;
+}
+
+.bigbox .tablebox::-webkit-scrollbar {
+   display: none;
+}
+.bigbox .tablebox table {
+    border-collapse: collapse;
+}
+
+.bigbox .tablebox table thead tr th {
+    color: white;
+    background-color: #4268e4;
+}
+
+
+.bigbox .tablebox table thead tr th,
+.bigbox .tablebox table tbody tr td {
+    text-align: center;
+    padding: 20px 40px;
+}
+.bigbox .tablebox table tbody tr {
+    background-color: #e1eeff;
+}
+
+.bigbox .tablebox table tbody tr:nth-child(odd) {
+    background-color: #f6f6f6;
+}
+/* 这里是添加和删除按钮的样式 */
+
+.bigbox .buttonbox button {
+    margin: 40px;
+    border: 0;
+    color: white;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #5cb9f0;
+    transition: all .2s linear;
+}
+
+.bigbox .buttonbox button:hover {
+    background-color: #3b79ec;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+}
+/* 这里是添加页面的样式 */
+
+.bigbox .tosspot {
+    visibility: hidden;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 60px;
+    background-image: linear-gradient(120deg,#a1c4fd 0%,#c2e9fb 100%);
+    border-radius: 5px;
+}
+
+.bigbox .tosspot h2 {
+    margin: 10px auto;
+    color: white;
+}
+
+.bigbox .tosspot ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.bigbox .tosspot ul li {
+    color: white;
+    margin: 10px;
+}
+.bigbox .tosspot ul li select{
+    border: 0;
+    width: 100px;
+}
+.bigbox .tosspot ul li input {
+    background-color: rgba(255, 255, 255, 1);
+    border: 0;
+    width: 200px;
+    height: 22px;
+    border-bottom: 1px white solid;
+}
+
+.bigbox .tosspot button {
+    width: 100px;
+    height: 35px;
+    color: white;
+    margin: 5px 10px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #4268e4;
+
+}
+
+.bigbox .tosspot button:nth-child(even){
+    background-color: #d6d6d6;
+}
+.bigbox .tosspot button:hover {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+}
+/* 这是弹出的提示框的样式 */
+.popupStyle {
+    display: none;
+    width: 160px;
+    background-color: rgb(126, 126, 126);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding:8px 0;
+    position: fixed;
+    z-index: 1;
+    top: 45%;
+    left: 50%;
+    margin-left: -80px;
+
+   }

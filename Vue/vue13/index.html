@@ -1,0 +1,90 @@
+<!--
+ * @Author: your name
+ * @Date: 2022-01-06 16:24:29
+ * @LastEditTime: 2022-01-18 16:47:35
+ * @LastEditors: Please set LastEditors
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: \hubulider\vue\vue\vue11\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品购物车</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="big-box">
+            <div class="title-box" ref="title">
+                <div class="checktext">
+                    <i :class='{allCheck:all,checkbox:true}' @click='allCheck'></i>
+                    <span>全选</span>
+                </div>
+                <div class="text-box">
+                    <span>单价</span>
+                    <span>数量</span>
+                    <span>小计(元)</span>
+                    <span @click='last'>{{del?'完成':'编辑'}}</span>
+                </div>
+            </div>
+            <ul class="content-box">
+                <li v-for='(item,index) in Commodity'>
+                    <div class="img-box">
+                        <div class="img-check">
+                            <i :class='{allCheck:item.decide,checkbox:true}' @click='decideCheck(index)'></i>
+                            <img :src="item.src" alt="">
+                        </div>
+                        <div class="introduce">
+                            <p>{{item.name}}</p>
+                            <p>{{item.text}}</p>
+                        </div>
+                    </div>
+                    <div class="money">
+                        <div>￥<strong>{{item.money.toFixed(2)}}</strong></div>
+                        <div class="quantity-box">
+                            <div class="quantity">
+                                <span @click='minus(index)'
+                                    :style="{'cursor':item.quantity<=1?'no-drop':'pointer'}">-</span>
+                                <input type="number" @blur='lose' v-model='item.quantity'>
+                                <span @click='add(index)'
+                                    :style="{'cursor':item.quantity>=50?'no-drop':'pointer'}">+</span>
+                            </div>
+                            <p>最多能只能买50件</p>
+                        </div>
+                        <div style="color: red;">￥<strong>{{item.subtotal.toFixed(2)}}</strong></div>
+                        <div class="del-box">
+                            <p :style="{'display':del? 'none':'block'}">--</p>
+                            <i :style="{'display':del?'inline-block':'none'}" class="del" @click='deleteLi(index)'></i>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="summarize-box">
+                <div :class='{summarize:true,summarizeFixed:fixed}' ref="summarize">
+                    <div class="summarizeLeft">
+                        <div class="summarizeCheck">
+                            <i :class='{allCheck:all,checkbox:true}' @click='allCheck'></i>
+                            <span>全选</span>
+                        </div>
+                        <p @click='allDel'>删除选中的商品</p>
+                        <p>一共有{{summarize}}件商品,已经选了<strong style="color: #47e3ee;">{{settle}}</strong>件</p>
+                    </div>
+                    <div class="summarizeRight">
+                        <p>合计(不包运费):<strong>￥{{allMoney.toFixed(2)}}</strong></p>
+                        <button>购买</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="../../js/vue.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

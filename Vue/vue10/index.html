@@ -1,0 +1,47 @@
+<!--
+ * @Author: your name
+ * @Date: 2022-01-06 13:57:54
+ * @LastEditTime: 2022-01-06 16:23:44
+ * @LastEditors: Please set LastEditors
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: \hubulidere:\素材\HTML案例：2022年美好祝福\vue\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2022年美好祝福</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <div id="app">
+        <div class="big-box">
+            <ul>
+                <li class="show" v-for='(item,index) in bless'>
+                    <div class="endways">
+                        <div class="title">
+                            <p>{{item.sentence}}</p>
+                        </div>
+                        <div class="text">
+                            <ul>
+                                <li>
+                                    <p v-for='(text,demo) in item.text'>{{text}}</p>
+                                    <button>{{item.idiom}}</button>
+                                </li>
+                            </ul>
+                            <div class="img-box">
+                                <img v-for='(image,imageindex) in item.src' :src="image" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="./js/vue.js"></script>
+    <script src="./js/index.js"></script>
+    
+</body>
+</html>

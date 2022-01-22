@@ -1,0 +1,49 @@
+<!--
+ * @Author: your name
+ * @Date: 2022-01-07 13:31:55
+ * @LastEditTime: 2022-01-07 13:52:07
+ * @LastEditors: Please set LastEditors
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: \hubulidere:\素材\HTML+CSS+VUE 记事本\vue\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>记事本</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="big-box">
+            <h3>{{title}}</h3>
+            <div class="input-box">
+                <input type="text" ref="inputValue" @keyup.enter='add'>
+                <i @click='add'></i>
+            </div>
+            <ul class="text-box">
+                <li v-for='(item,index) in incident' :key='index'>
+                    <div>
+                        <i @click='finish(index)' :class='{settle:item.show}'></i>
+                    </div>
+                    <p><s :style='{textDecoration:item.show?"line-through":"none"}'>
+                            {{item.text}}
+                        </s></p>
+                    <i class="deletebutton" @click='deleteli(index)'></i>
+                </li>
+            </ul>
+            <div class="statistics-box" v-show='incident.length!==0'>
+                <p>完成了{{statistics}}件事</p>
+                <button @click='selectdel'>删除</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/vue.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-31deg,#222225 0%,#47474c 100%,#6e7ff3 100%);
+}
+
+ul,li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h3,p {
+    margin: 0;
+    padding: 0;
+}
+
+.big-box {
+    width: 100%;
+    height: 100%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.big-box h3 {
+    font-size: 40px;
+    margin: 10px auto;
+    color: #4d5dc9;
+    text-shadow: -1px 1px 6px #4d5dc9a2;
+}
+
+.time-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 700px;
+    height: 280px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #4d5dc9;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.time-box li {
+    width: 100px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    color: white;
+    font-size: 80px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+}
+
+.time-box li:nth-child(3),.time-box li:nth-child(6){
+    width: 20px;
+    box-shadow: none;
+}
+
+.time-box li span {
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 200px;
+    line-height: 200px;
+    background-color: #9ca7ee;
+    opacity: 1;
+    transition: all 0.6s;
+}
+
+.time-box li .spantop {
+    top: -100%;
+    opacity: 0;
+}
+
+.time-box li i {
+    display: block;
+    font-size: 60px;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+}

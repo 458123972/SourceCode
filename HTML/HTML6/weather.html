@@ -1,0 +1,62 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-07-09 23:16:06
+ * @LastEditTime: 2021-07-10 13:03:16
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \HTML案列（七）\weath.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天气查询</title>
+    <link rel="stylesheet" href="./css/weather.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="search_form">
+            <div class="logo">
+                <img src="./image/tiqitubiao.jpeg" alt="1">
+            </div>
+            <div class="form_group">
+                <input type="text" v-model="city" @keyup.enter="searchWeather" placeholder="请输入查询天气的城市" />
+                <button class="input_sub" @click="searchWeather">搜索</button>
+            </div>
+            <div class="hotkey">
+                <a href="javascript:void(0)" @click="changCity('河源')">河源</a>
+                <a href="javascript:void(0)" @click="changCity('汕头')">汕头</a>
+                <a href="javascript:void(0)" @click="changCity('惠州')">惠州</a>
+                <a href="javascript:void(0)" @click="changCity('厦门')">厦门</a>
+            </div>
+        </div>
+        <ul class="weather_list">
+            <li v-for="item in weatherList">
+                <div class="info_type">
+                    <span class="iconfont">天气:{{item.type}}</span>
+                </div>
+                <div class="info_temp">
+                    <b>温度:{{item.low}}</b>~<b>{{item.high}}</b>
+                </div>
+                <div class="info_fengxiang">
+                    <span>风向:{{item.fengxiang}}</span>
+                </div>
+                <div class="info_date">
+                    <span class="iconfont">日期:{{item.date}}</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</body>
+<!-- 这是axios.js用于网络请求 -->
+<script src="./js/axios.js"></script>
+<!-- 这是vue.js 这样写代码更方便  可以到官网下载-->
+<script src="./js/vue.js"></script>
+<script src="./js/weather.js"></script>
+
+</html>
