@@ -1,0 +1,36 @@
+<!--
+ * @Author: your name
+ * @Date: 2022-01-21 16:43:29
+ * @LastEditTime: 2022-01-21 16:54:47
+ * @LastEditors: Please set LastEditors
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: \hubulidere:\素材\vue案例：消消乐\vue\index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>消消乐</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="big-box">
+            <ul>
+                <li v-for='(item,index) in src' :style="{visibility:item.show?'visible':'hidden'}"
+                    @click='selective(index)'>
+                    <img :src="item.image" alt="">
+                    <div class="position" :style="{opacity:item.opacity}"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="./js/vue.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
